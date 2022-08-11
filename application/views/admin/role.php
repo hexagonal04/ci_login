@@ -28,6 +28,7 @@
                                 <th scope="row"><?= $i ; ?></th>
                                 <td><?= $r['role']; ?> </td>
                                 <td>
+                                    <a href ="<?= base_url('admin/roleaccess/') . $r['id']; ?>" class="badge badge-warning">access</a>
                                     <a href ="" class="badge badge-success">edit</a>
                                     <a href ="" class="badge badge-danger">delete</a>
                                 </td>
@@ -60,7 +61,7 @@
       <div class="modal-body">
         <div class="mb-3">
             <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
-            <input type="text" class="form-control" id="menu" name="menu" placeholder="Input menu Name">
+            <input type="text" class="form-control" id="role" name="role" placeholder="Input Role Name">
         </div>
       </div>
 
